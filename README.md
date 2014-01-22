@@ -47,8 +47,8 @@ Then start the REST server using this configuration object
          },
          // EWD.js server mapping
          server: {
-           local: {
-             host: 'localhost',
+           somewhere: {
+             host: 'www.somewhere.com',
              port: 8080,
              ssl: true,
              secretKey: 'TakeARest!',
@@ -58,6 +58,30 @@ Then start the REST server using this configuration object
        };
  
        ewdrest.start(params);
+
+
+This example will forward all GET, POST, DELETE and PUT REST request URLs of the form:
+
+       http://localhost:8081/somewhere/myService/etc.....
+
+to the EWD.js server at www.somewhere.com:8080, where a service named parse in an EWD.js module named 
+myModule will be invoked to handle the request.
+
+ie:
+
+      /somewhere defines the EWD.js server route
+      /myService is a proxy to the back-end EWD.js module name
+
+
+Parsing the rest of the URL and determining which HTTP Verb(s) are valid is the responsibility of the 
+EWD.js back-end module.
+
+A valid back-end response should return a JSON response whose content is up to you.  
+An error response is of the form:
+
+       {error: 'Your specific error message'}  
+
+
 
 
 Note: the accessId and secretKey must be registered on the EWD.js server, along with any back-end modules 
