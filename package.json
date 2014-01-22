@@ -1,0 +1,20 @@
+{ "name": "ewdrest", 
+  "description": "REST Server front-end rewriter/router for EWD.js systems", 
+   "version": "0.1.0", 
+   "author": "Rob Tweed <rtweed@mgateway.com>", 
+   "repository": { 
+     "type": "git", 
+     "url": "git://github.com/robtweed/ewdrest.git"
+   }, 
+   "os": [ "any" ],
+   "directories": { 
+     "lib" : "./lib/" 
+   }, 
+   "main": "./lib/ewdrest.js", 
+   "engines": { "node" : ">=0.2.2" }, 
+   "dependencies": {
+     "restify": "2.6.1",
+     "ewdliteclient": ">=0.2.0"
+   },
+   "licenses": [ "Apache" ]
+}
