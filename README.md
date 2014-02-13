@@ -6,7 +6,7 @@ It rewrites incoming REST URLs and rewrites them as signed EWD.js HTTP URLs and 
 to an EWD.js server where a back-end module provides the web service logic.
 
 Rob Tweed <rtweed@mgateway.com>  
-19 June 2013, M/Gateway Developments Ltd [http://www.mgateway.com](http://www.mgateway.com)  
+13 February 2014, M/Gateway Developments Ltd [http://www.mgateway.com](http://www.mgateway.com)  
 
 Twitter: @rtweed
 
