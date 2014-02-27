@@ -1,6 +1,6 @@
 { "name": "ewdrest", 
   "description": "REST Server front-end rewriter/router for EWD.js systems", 
-   "version": "0.3.0", 
+   "version": "0.4.0", 
    "author": "Rob Tweed <rtweed@mgateway.com>", 
    "repository": { 
      "type": "git", 
